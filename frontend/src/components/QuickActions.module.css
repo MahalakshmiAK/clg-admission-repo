@@ -1,0 +1,29 @@
+/* QuickActions.module.css */
+.strip {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  padding: 10px 16px;
+  background: var(--color-surface);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.chip {
+  padding: 6px 13px;
+  border: 1px solid var(--color-border);
+  border-radius: 20px;
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-size: 0.82rem;
+  cursor: pointer;
+  transition: background 0.15s, border-color 0.15s;
+  white-space: nowrap;
+}
+
+.chip:hover:not(:disabled) {
+  background: var(--color-accent-pale);
+  border-color: var(--color-accent);
+  color: var(--color-accent-dark);
+}
+
+.chip:disabled { opacity: 0.5; cursor: not-allowed; }

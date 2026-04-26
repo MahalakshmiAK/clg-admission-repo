@@ -1,0 +1,24 @@
+# Web Server
+fastapi
+uvicorn[standard]
+pydantic
+pydantic-settings
+
+# AI & RAG Orchestration
+langchain
+langchain-community
+langchain-core
+langchain-groq
+langchain-text-splitters
+
+# Database & Embeddings
+chromadb
+sentence-transformers
+
+# Utilities
+python-dotenv
+typing-extensions
+
+# Testing
+pytest
+httpx

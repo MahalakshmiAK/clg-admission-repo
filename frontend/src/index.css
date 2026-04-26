@@ -1,0 +1,50 @@
+/* index.css — global design tokens and resets */
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=DM+Mono:wght@400;500&display=swap');
+
+:root {
+  /* Palette */
+  --color-accent:         #1a73e8;
+  --color-accent-dark:    #1558b0;
+  --color-accent-pale:    #e8f0fe;
+
+  --color-page-bg:        #f0f4f9;
+  --color-bg:             #ffffff;
+  --color-surface:        #f8f9fa;
+  --color-header-bg:      #1c2b4a;
+
+  --color-text:           #1a1a2e;
+  --color-text-muted:     #6b7280;
+
+  --color-border:         #e2e8f0;
+
+  --color-user-bubble:      #1a73e8;
+  --color-assistant-bubble: #f1f5f9;
+  --color-system-bubble:    #fef9ec;
+  --color-source-bg:        #f8fafc;
+
+  font-family: 'DM Sans', system-ui, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--color-text);
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--color-page-bg);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Remove default list styles for source lists */
+ul, ol { list-style: none; }
+
+/* Focus ring for keyboard nav */
+:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+}
